@@ -75,6 +75,11 @@
 
   .duo { display: grid; grid-template-columns: 1fr 2fr; gap: 18px; align-items: stretch; }
   .duo .account { margin: 0; grid-template-columns: 1fr; align-content: center; gap: 14px; }
+  .wide-wrap { margin-top: 18px; }
+  .work.wide { flex-direction: row; }
+  .work.wide img { width: 30%; aspect-ratio: 9 / 13; flex-shrink: 0; }
+  .work.wide .body { justify-content: center; padding: 20px 22px; }
+  .work.wide .why { margin-top: 6px !important; }
   .note { font-size: 13px; color: var(--muted); margin-top: 14px; }
 
   .end {
@@ -95,6 +100,8 @@
     .work img { aspect-ratio: 4 / 5; }
     .account { grid-template-columns: 1fr; gap: 10px; }
     .duo { grid-template-columns: 1fr; }
+    .work.wide { flex-direction: column; }
+    .work.wide img { width: 100%; aspect-ratio: 4 / 5; }
     .lede { font-size: 18px; }
   }
 </style>
@@ -128,7 +135,7 @@
         <div class="stat">3.3M plays</div>
         <h4>A 1945 Amsterdam deli, in 70 seconds</h4>
         <p>One sandwich, one glass of milk, and a story around it.</p>
-        <p class="why"><b>For Pushee:</b> the same pull your founder-story ad had. People follow a person first, then the product.</p>
+        <p class="why"><b>Why it works:</b> People follow a person before they follow a product. A face and a story keep them watching to the end.</p>
       </div>
     </a>
     <a class="work" href="https://www.instagram.com/reel/DGJM7OZufLM/" target="_blank" rel="noopener">
@@ -137,7 +144,7 @@
         <div class="stat">932K plays</div>
         <h4>Canelés, start to finish</h4>
         <p>A fussy process made easy to follow, with the full recipe in the caption.</p>
-        <p class="why"><b>For Pushee:</b> how we'd film your formulation trips to Minneapolis, turning a process into something people save.</p>
+        <p class="why"><b>Why it works:</b> A complicated process, made simple enough to follow. Content people save and come back to.</p>
       </div>
     </a>
     <a class="work" href="https://www.instagram.com/reel/DCdwrs5O6kE/" target="_blank" rel="noopener">
@@ -146,7 +153,7 @@
         <div class="stat">474K plays</div>
         <h4>Brioche in Lyon</h4>
         <p>Warm and personal, never a hard sell.</p>
-        <p class="why"><b>For Pushee:</b> the positive energy you want. Selling without scaring anyone.</p>
+        <p class="why"><b>Why it works:</b> Warm and personal. It sells the experience without ever feeling like an ad.</p>
       </div>
     </a>
   </div>
@@ -161,7 +168,7 @@
         <div class="stat">416K plays · 4,700+ comments</div>
         <h4>"How much salt do I need?"</h4>
         <p>The question his followers ask him most, answered in one reel.</p>
-        <p class="why"><b>For Pushee:</b> your clients ask you the same questions again and again. Each one is a reel.</p>
+        <p class="why"><b>Why it works:</b> Every question a brand gets asked again and again is a reel waiting to be made.</p>
       </div>
     </a>
     <a class="work" href="https://www.instagram.com/reel/DR7mY98jP8b/" target="_blank" rel="noopener">
@@ -170,7 +177,7 @@
         <div class="stat">527K plays</div>
         <h4>Fermented lemons</h4>
         <p>Clear, simple teaching from the person who knows the subject best.</p>
-        <p class="why"><b>For Pushee:</b> ten years as a doula is the same kind of expertise. We turn it into content.</p>
+        <p class="why"><b>Why it works:</b> Real expertise, explained simply. It builds trust faster than any claim can.</p>
       </div>
     </a>
     <a class="work" href="https://www.instagram.com/reel/DZU_7AYMLjh/" target="_blank" rel="noopener">
@@ -179,7 +186,7 @@
         <div class="stat">133K plays · 1,000+ comments</div>
         <h4>"Comment MOLD for the guide"</h4>
         <p>A short teaching reel that ends with a free beginner's guide for anyone who comments.</p>
-        <p class="why"><b>For Pushee:</b> education that ends in a DM and a lead, not only a like. That's the gap between your tips content and your sales.</p>
+        <p class="why"><b>Why it works:</b> Teaching that ends in a DM and a lead, not only a like. It turns views into potential customers.</p>
       </div>
     </a>
   </div>
@@ -188,24 +195,56 @@
   <h2>Food businesses</h2>
   <p class="sub">Brands, not people, where the content has to bring customers through the door.</p>
 
-  <div class="duo">
-    <a class="work" href="https://www.instagram.com/reel/DZCl07UowSR/" target="_blank" rel="noopener">
+  <a class="account" href="https://www.instagram.com/sunflourbakerybg/" target="_blank" rel="noopener">
+    <div class="big">14K → 28K<small>followers</small></div>
+    <div>
+      <h4>Sunflour Bakery, Haifa</h4>
+      <p>A quiet account brought back to life with recipes, behind the scenes and fun food content.</p>
+      <p class="why"><b>Why it works:</b> Consistent, varied content can wake up a quiet account and turn it back into a source of customers.</p>
+    </div>
+  </a>
+
+  <div class="grid" style="margin-top:18px">
+    <a class="work" href="https://www.instagram.com/reel/DUvFO1niJCe/" target="_blank" rel="noopener">
+      <img src="img/sunflour-focaccia.jpg" alt="Sunflour focaccia recipe" loading="lazy">
+      <div class="body">
+        <div class="stat">548K plays</div>
+        <h4>Focaccia</h4>
+        <p>Their bakery focaccia, with the full recipe in the caption.</p>
+        <p class="why"><b>Why it works:</b> Giving away a signature recipe builds trust, and people still come in to buy the real thing.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DWbMI2KRkw2/" target="_blank" rel="noopener">
+      <img src="img/sunflour-pizza.jpg" alt="Sunflour boyos recipe" loading="lazy">
+      <div class="body">
+        <div class="stat">379K plays</div>
+        <h4>Boyos</h4>
+        <p>A traditional pastry, shown step by step from the bakery kitchen.</p>
+        <p class="why"><b>Why it works:</b> Behind the scenes of how something is made makes people value it more.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DTm_WfCFfoi/" target="_blank" rel="noopener">
+      <img src="img/sunflour-cream.jpg" alt="Sunflour pastry cream recipe" loading="lazy">
+      <div class="body">
+        <div class="stat">350K plays</div>
+        <h4>Pastry cream</h4>
+        <p>"The last pastry cream recipe you'll ever need."</p>
+        <p class="why"><b>Why it works:</b> A bold, confident hook, and a recipe people save to make again.</p>
+      </div>
+    </a>
+  </div>
+  <p class="note">All three are from the bakery's recipe series. Captions are in Hebrew.</p>
+
+  <div class="wide-wrap">
+    <a class="work wide" href="https://www.instagram.com/reel/DZCl07UowSR/" target="_blank" rel="noopener">
       <img src="img/loki.jpg" alt="Two dogs showing the way to Loki coffee roasters" loading="lazy">
       <div class="body">
         <div class="stat">12K plays · Loki Coffee Roasters</div>
         <h4>"How do you get to Loki?"</h4>
         <p>Two dogs show you the way to a coffee roaster in Tel Aviv. It's in Hebrew, but you'll get the vibe.</p>
-        <p class="why"><b>For Pushee:</b> humor like Bobbie's, and a way to get people to your pop-ups at Pop Up Grocer.</p>
+        <p class="why"><b>Why it works:</b> Humor and personality in a local business. It gives people a reason to come in person.</p>
       </div>
     </a>
-    <a class="account" href="https://www.instagram.com/sunflourbakerybg/" target="_blank" rel="noopener">
-    <div class="big">14K → 28K<small>followers</small></div>
-    <div>
-      <h4>Sunflour Bakery, Haifa</h4>
-      <p>A quiet account brought back to life with recipes, behind the scenes and fun food content.</p>
-      <p class="why"><b>For Pushee:</b> you're relaunching in November after a pause. Waking an account up is work we've done.</p>
-    </div>
-  </a>
   </div>
 
   <p class="note">Numbers are Instagram plays and followers as of September 24, 2026. Tap any card to watch.</p>
