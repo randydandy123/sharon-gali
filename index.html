@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharon &amp; Gali, for Hannah</title>
+<meta name="description" content="A few things we've made, picked for Pushee.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #2b2622;
+    --muted: #7a7068;
+    --line: #ece4d8;
+    --accent: #d9774b;
+    --accent-soft: #fbe9df;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 56px 20px 80px; }
+  .kicker { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 {
+    font-family: Fraunces, Georgia, serif; font-weight: 600;
+    font-size: clamp(34px, 6vw, 52px); line-height: 1.1; margin: 10px 0 18px;
+  }
+  .lede { font-size: 20px; max-width: 640px; margin: 0; }
+  .lede b { font-weight: 600; }
+
+  .people { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0 8px; }
+  .person { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+  .person h3 { font-family: Fraunces, Georgia, serif; font-size: 22px; margin: 0 0 6px; font-weight: 600; }
+  .person p { margin: 0; color: var(--muted); font-size: 15px; }
+  .how { color: var(--muted); font-size: 15px; margin: 14px 0 0; }
+
+  h2 {
+    font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 28px;
+    margin: 64px 0 6px;
+  }
+  .sub { color: var(--muted); margin: 0 0 22px; }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .work {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .work:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(60,40,20,.08); }
+  .work img { width: 100%; aspect-ratio: 9 / 13; object-fit: cover; display: block; background: var(--line); }
+  .work .body { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .work .stat { font-size: 13px; font-weight: 600; color: var(--accent); }
+  .work h4 { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.35; }
+  .work p { margin: 0; font-size: 14px; color: var(--muted); }
+  .why { margin-top: auto !important; padding-top: 8px; font-size: 14px; color: var(--ink) !important; border-top: 1px dashed var(--line); }
+  .why b { color: var(--accent); font-weight: 600; }
+
+  .account {
+    display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center;
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px;
+    text-decoration: none; color: inherit; margin-bottom: 18px;
+  }
+  .account .big { font-family: Fraunces, Georgia, serif; font-size: 34px; font-weight: 600; line-height: 1; white-space: nowrap; }
+  .account .big small { display: block; font-family: Inter, sans-serif; font-size: 12px; color: var(--muted); font-weight: 500; margin-top: 6px; }
+  .account h4 { margin: 0 0 4px; font-size: 16px; }
+  .account p { margin: 0; font-size: 14px; color: var(--muted); }
+  .account .why { border-top: none; padding-top: 6px; }
+
+  .duo { display: grid; grid-template-columns: 1fr 2fr; gap: 18px; align-items: stretch; }
+  .duo .account { margin: 0; grid-template-columns: 1fr; align-content: center; gap: 14px; }
+  .note { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  .end {
+    margin-top: 64px; background: var(--accent-soft); border-radius: 20px; padding: 30px 28px;
+  }
+  .end h2 { margin: 0 0 8px; }
+  .end p { margin: 0 0 6px; }
+  .end a { color: var(--ink); font-weight: 600; }
+
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .people { grid-template-columns: 1fr; }
+    .duo { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 36px 16px 60px; }
+    .grid { grid-template-columns: 1fr; }
+    .work img { aspect-ratio: 4 / 5; }
+    .account { grid-template-columns: 1fr; gap: 10px; }
+    .duo { grid-template-columns: 1fr; }
+    .lede { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="kicker">For Hannah, Pushee</div>
+  <h1>Sharon &amp; Gali</h1>
+  <p class="lede">We plan, shoot and edit founder-led content, so <b>you bring the knowledge and the face, and we do everything else</b>: the strategy, the ideas, the filming and the edit.</p>
+
+  <div class="people">
+    <div class="person">
+      <h3>Gali Firon</h3>
+      <p>New York. Works in marketing at an ad tech company, so she sees what actually makes people stop and buy. A natural storyteller, and the creator behind millions of views on her own food page. She's the one on the ground, shooting.</p>
+    </div>
+    <div class="person">
+      <h3>Sharon Gol</h3>
+      <p>Israel. A background in performance marketing, and over a year growing social accounts for food businesses and founders, from strategy to the final cut. Grew chef Shalom Elbert's personal brand from about 4K to 59K followers.</p>
+    </div>
+  </div>
+  <p class="how">We met studying gastronomy in Italy. Today we plan and write every piece together, and split the editing between us. For you, we're one team.</p>
+
+  <!-- GALI -->
+  <h2>Gali's own page</h2>
+  <p class="sub">A person on camera, telling a story people want to watch to the end.</p>
+  <div class="grid">
+    <a class="work" href="https://www.instagram.com/reel/DFk8MgRNWmD/" target="_blank" rel="noopener">
+      <img src="img/gali-amsterdam.jpg" alt="Sandwich and a glass of milk at Van Dobben, Amsterdam" loading="lazy">
+      <div class="body">
+        <div class="stat">3.3M plays</div>
+        <h4>A 1945 Amsterdam deli, in 70 seconds</h4>
+        <p>One sandwich, one glass of milk, and a story around it.</p>
+        <p class="why"><b>For Pushee:</b> the same pull your founder-story ad had. People follow a person first, then the product.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DGJM7OZufLM/" target="_blank" rel="noopener">
+      <img src="img/gali-caneles.jpg" alt="Making canelés in a home kitchen" loading="lazy">
+      <div class="body">
+        <div class="stat">932K plays</div>
+        <h4>Canelés, start to finish</h4>
+        <p>A fussy process made easy to follow, with the full recipe in the caption.</p>
+        <p class="why"><b>For Pushee:</b> how we'd film your formulation trips to Minneapolis, turning a process into something people save.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DCdwrs5O6kE/" target="_blank" rel="noopener">
+      <img src="img/gali-lyon.jpg" alt="Gali eating brioche in Lyon" loading="lazy">
+      <div class="body">
+        <div class="stat">474K plays</div>
+        <h4>Brioche in Lyon</h4>
+        <p>Warm and personal, never a hard sell.</p>
+        <p class="why"><b>For Pushee:</b> the positive energy you want. Selling without scaring anyone.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- SHALOM -->
+  <h2>Shalom Elbert, chef and founder</h2>
+  <p class="sub">A personal brand built on teaching, grown from about 4K to <a href="https://www.instagram.com/shalom_elbert/" target="_blank" rel="noopener">59K followers</a>.</p>
+  <div class="grid">
+    <a class="work" href="https://www.instagram.com/reel/DYITtE7Jjjs/" target="_blank" rel="noopener">
+      <img src="img/shalom-salt.jpg" alt="Shalom: how much salt to use" loading="lazy">
+      <div class="body">
+        <div class="stat">416K plays · 4,700+ comments</div>
+        <h4>"How much salt do I need?"</h4>
+        <p>The question his followers ask him most, answered in one reel.</p>
+        <p class="why"><b>For Pushee:</b> your clients ask you the same questions again and again. Each one is a reel.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DR7mY98jP8b/" target="_blank" rel="noopener">
+      <img src="img/shalom-lemons.jpg" alt="Lacto fermented lemons" loading="lazy">
+      <div class="body">
+        <div class="stat">527K plays</div>
+        <h4>Fermented lemons</h4>
+        <p>Clear, simple teaching from the person who knows the subject best.</p>
+        <p class="why"><b>For Pushee:</b> ten years as a doula is the same kind of expertise. We turn it into content.</p>
+      </div>
+    </a>
+    <a class="work" href="https://www.instagram.com/reel/DZU_7AYMLjh/" target="_blank" rel="noopener">
+      <img src="img/shalom-koji.jpg" alt="Shalom: a beginner's guide to koji" loading="lazy">
+      <div class="body">
+        <div class="stat">133K plays · 1,000+ comments</div>
+        <h4>"Comment MOLD for the guide"</h4>
+        <p>A short teaching reel that ends with a free beginner's guide for anyone who comments.</p>
+        <p class="why"><b>For Pushee:</b> education that ends in a DM and a lead, not only a like. That's the gap between your tips content and your sales.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- SUNFLOUR + LOKI -->
+  <h2>Food businesses</h2>
+  <p class="sub">Brands, not people, where the content has to bring customers through the door.</p>
+
+  <div class="duo">
+    <a class="work" href="https://www.instagram.com/reel/DZCl07UowSR/" target="_blank" rel="noopener">
+      <img src="img/loki.jpg" alt="Two dogs showing the way to Loki coffee roasters" loading="lazy">
+      <div class="body">
+        <div class="stat">12K plays · Loki Coffee Roasters</div>
+        <h4>"How do you get to Loki?"</h4>
+        <p>Two dogs show you the way to a coffee roaster in Tel Aviv. It's in Hebrew, but you'll get the vibe.</p>
+        <p class="why"><b>For Pushee:</b> humor like Bobbie's, and a way to get people to your pop-ups at Pop Up Grocer.</p>
+      </div>
+    </a>
+    <a class="account" href="https://www.instagram.com/sunflourbakerybg/" target="_blank" rel="noopener">
+    <div class="big">14K → 28K<small>followers</small></div>
+    <div>
+      <h4>Sunflour Bakery, Haifa</h4>
+      <p>A quiet account brought back to life with recipes, behind the scenes and fun food content.</p>
+      <p class="why"><b>For Pushee:</b> you're relaunching in November after a pause. Waking an account up is work we've done.</p>
+    </div>
+  </a>
+  </div>
+
+  <p class="note">Numbers are Instagram plays and followers as of September 24, 2026. Tap any card to watch.</p>
+
+  <div class="end">
+    <h2>Next</h2>
+    <p>We're putting together two options for you, a light one and a fuller one, and we'll walk you through them on a quick call.</p>
+    <p>Sharon · <a href="mailto:sharongolt@gmail.com">sharongolt@gmail.com</a></p>
+    <p>Gali · <a href="mailto:hellogalifiron@gmail.com">hellogalifiron@gmail.com</a></p>
+  </div>
+
+</main>
+</body>
+</html>
